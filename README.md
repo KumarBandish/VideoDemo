@@ -1,4 +1,4 @@
-# VideoDemo
+# VideoDemoApp
 Demo app like TikTok.
 
 min:  Xcode 11.2.1
