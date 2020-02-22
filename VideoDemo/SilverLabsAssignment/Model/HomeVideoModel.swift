@@ -6,8 +6,7 @@
 //  Copyright © 2020 Bandish Kumar. All rights reserved.
 //
 
-import UIKit
-import AVKit
+import Foundation
 
 //MARK: VideoList
 struct VideoList: Codable {
@@ -33,14 +32,6 @@ struct Node: Codable {
 // MARK: - Video
 struct Video: Codable {
     var encodeURL: String?
-    
-//    mutating func getVideoThumbnail(urlString: String) {
-//        
-//        AVAsset(url: URL(string: encodeURL ?? "") ?? URL(string: "")!).generateThumbnail { (image) in
-//
-//            PersistentManager.shareInstance.saveImage(data: image?.jpegData(compressionQuality: 1.0), url: urlString)
-//        }
-//    }
     
     enum CodingKeys: String, CodingKey {
         case encodeURL = "encodeUrl"
